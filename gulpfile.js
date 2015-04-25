@@ -8,3 +8,11 @@ gulp.task('default', function() {
 gulp.task('bower', function () {
 	wiredep({ src: 'index.html' });
 });
+
+var sass = require('gulp-sass');
+ 
+gulp.task('sass', function () {
+    gulp.src('./sass/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./css'));
+});
