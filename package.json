@@ -1,0 +1,26 @@
+{
+  "name": "onebuttonpizza-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.8.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magical-unicorn/onebuttonpizza-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magical-unicorn/onebuttonpizza-app/issues"
+  },
+  "homepage": "https://github.com/magical-unicorn/onebuttonpizza-app"
+}
