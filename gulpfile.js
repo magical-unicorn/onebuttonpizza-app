@@ -7,6 +7,7 @@ gulp.task('default', function() {
 
 gulp.task('bower', function () {
 	wiredep({ src: 'index.html' });
+	wiredep({src: 'sass/main.scss'});
 });
 
 var sass = require('gulp-sass');
