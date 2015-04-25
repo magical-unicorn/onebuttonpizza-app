@@ -9,7 +9,8 @@
   "devDependencies": {
     "bower": "^1.4.1",
     "gulp": "^3.8.11",
-    "node-sass": "^2.1.1"
+    "node-sass": "^2.1.1",
+    "wiredep": "^2.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
