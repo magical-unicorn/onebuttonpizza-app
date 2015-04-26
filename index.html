@@ -10,7 +10,38 @@
     <div class="oc-container">
         <div class="oc-pusher">
             <nav class="oc-menu">
-                <!-- sidebar content -->
+                <h1>Mes préférences</h1>
+                <div>
+                    <h2>Mes coordonnées</h2>
+                    <a href="#" class="edit">Modifier</a>
+                    <script data-tpl-object="user" type="text/x-handlebars-template">
+                        <strong>{{user.firstname}} {{user.lastname}}</strong>
+                        <adress>{{user.adress}}</adress>
+                        <p>{{user.phone}}</p>
+                    </script>
+                </div>
+                <h1>Paiement</h1>
+                <div>
+                    <a href="#" class="edit">Modifier</a>
+                    <strong>Carte bancaire</strong>
+                    <script data-tpl-object="user" type="text/x-handlebars-template">
+                        <p>xxxx&nbsp;xxxx&nbsp;xxxx&nbsp;{{user.cb.last-digit}}</p>
+                        <p>{{user.cb.expire}}</p>
+                    </script>
+                </div>
+                <h1>Pizza préférée</h1>
+                <div>
+                    <script data-tpl-object="user" type="text/x-handlebars-template">
+                        {{user.pizza}}
+                    </script>
+                </div>
+                <h1>Partage Social</h1>
+                <ul>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>Google +</li>
+                </ul>
+
             </nav>
             <div class="oc-content">
                 <div class="oc-content-inner">
