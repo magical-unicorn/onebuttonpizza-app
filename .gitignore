@@ -44,6 +44,7 @@ node_modules
 ### Sass ###
 .sass-cache
 *.css.map
+*.css
 
 
 ### OSX ###
