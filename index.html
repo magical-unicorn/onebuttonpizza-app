@@ -4,6 +4,8 @@
     <title>1 button 🍕</title>
   <!-- bower:css -->
   <!-- endbower -->
+  <link rel="stylesheet" href="bower_components/owl-carousel2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="bower_components/owl-carousel2/dist/assets/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 </head>
 <body>
@@ -45,8 +47,34 @@
             </nav>
             <div class="oc-content">
                 <div class="oc-content-inner">
-                    <!-- the real content -->
-                    <a href="#" class="toggleMenu">Menu</a>
+                    <section id="launchscreen"></section>
+                    <section id="newuser-intro"></section>
+                    <section id="newuser-details"></section>
+                    <section id="pizza-choice">
+                        <div id="pizza-selector">
+                            <img src="img/pizzas/4_fromages.svg" alt="">
+                            <img src="img/pizzas/4_saisons.svg" alt="">
+                            <img src="img/pizzas/bolo.svg" alt="">
+                            <img src="img/pizzas/campagnarde.svg" alt="">
+                            <img src="img/pizzas/diavola.svg" alt="">
+                            <img src="img/pizzas/margarita.svg" alt="">
+                            <img src="img/pizzas/poulet.svg" alt="">
+                            <img src="img/pizzas/regina.svg" alt="">
+                            <img src="img/pizzas/vegetarienne.svg" alt="">
+                        </div>
+                        <p class="pizza-details">
+                            <h1>{{pizza.name}}</h1>
+                            <p>{{pizza.details}}</p>
+                        </p>
+                        <div class="button">
+                            <strong>commander</strong>
+                            <p class="pizza-location">Chez {{pizzeria.location}}</p>
+                            <p class="pizza-price">{{pizza.price}} &euro;</p>
+                        </div>
+                        <a href="#">Autre pizzeria</a>
+                    </section>
+                    <section id="rank"></section>
+                    <section id="social-sharing"></section>
                 </div>
             </div>
         </div>
@@ -58,6 +86,7 @@
   <script src="bower_components/rsvp/rsvp.js"></script>
   <script src="bower_components/geofire/dist/geofire.js"></script>
   <!-- endbower -->
+  <script src="bower_components/owl-carousel2/dist/owl.carousel.min.js"></script>
   <script src="scripts/config.js"></script>
   <script src="scripts/queries.js"></script>
   <script src="scripts/main.js"></script>

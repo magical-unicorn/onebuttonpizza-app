@@ -18,7 +18,8 @@
     "handlebars": "~3.0.2",
     "firebase": "~2.2.4",
     "jquery": "~2.1.3",
-    "geofire": "~3.2.2"
+    "geofire": "~3.2.2",
+    "owl-carousel2": "*"
   },
   "devDependencies": {
     "bourbon": "~4.2.2",
