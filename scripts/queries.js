@@ -28,7 +28,7 @@ function userCoords(address, callback)
 }
 
 
-function findNearestPizzeria(customer_address) 
+function findNearestPizzeria(customer_address, callback) 
 {
 	userCoords(customer_address, function(coords) {
 		console.log(coords);
@@ -52,8 +52,7 @@ function findNearestPizzeria(customer_address)
 					}					
 				}
 			}
-			//boutiques.sort(function(a, b) {return a.distance - b.distance;})
-			console.log(nearest);
+			callback(nearest);
 		});
 	});
 }
@@ -63,6 +62,7 @@ function isOpenNow(boutique) {
 	var n = d.getDay();
 
 	var now = d.getHours()*100 + d.getMinutes();
+	now = 1800;
 
 	var periods = boutique.opening_hours.periods;
 	for (var i in periods) {
