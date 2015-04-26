@@ -1,6 +1,6 @@
 
 /*
-call_pizzeria('Bob', '+33679889177', '+33678570233', '1 rue des Trinitaires, Metz', 'Margherita', function(r) {
+call_pizzeria('Bob', '+33679889177', '+33678570233', '1 rue des Trinitaires, Metz', 'Margherita', 1, function(r) {
 	console.log('callback');
 	console.log(r);
 });
@@ -10,7 +10,6 @@ call_pizzeria('Bob', '+33679889177', '+33678570233', '1 rue des Trinitaires, Met
 var ref = new Firebase(firebaseEndpoint);
 var geoFire = new GeoFire(ref);
 
-//GeoFire.distance(location1, location2)
 
 function userCoords(address, callback)
 {
@@ -84,9 +83,9 @@ function isOpenNow(boutique) {
 }
 
 
-function call_pizzeria(customer_name, customer_phone, pizzeria_phone, customer_address, pizza, callback) {
+function call_pizzeria(customer_name, customer_phone, pizzeria_phone, customer_address, pizza, nr_pizzas, callback) {
 	var url = 'http://obp.sous-anneau.org/voice.php';
-	var params = { 'customer_name': customer_name, 'customer_phone': customer_phone, 'pizzeria_phone': pizzeria_phone, 'customer_address': customer_address, 'pizza': pizza};
+	var params = { 'customer_name': customer_name, 'customer_phone': customer_phone, 'pizzeria_phone': pizzeria_phone, 'customer_address': customer_address, 'pizza': pizza, 'nr_pizzas': nr_pizzas};
 	$.ajax({
 			type: 'POST',
 			url: url,
