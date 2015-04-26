@@ -1,5 +1,9 @@
 # Created by https://www.gitignore.io
 
+## do not version config ##
+scripts/config.js
+
+
 ### Bower ###
 bower_components
 .bower-cache
@@ -48,7 +52,8 @@ node_modules
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
